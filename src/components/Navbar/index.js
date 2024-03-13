@@ -20,7 +20,7 @@ export default function Navbar () {
     return (
         <nav className="navbar navbar__container bg-body-tertiary">
             <div className="container-fluid">
-                <Link href="/" className="navbar-brand">Bank List</Link>
+                <Link href="/" className="navbar-brand">Lista de bancos</Link>
                 <form className="d-flex" role="search" onSubmit={handleSearch}>
                     <input 
                         className="form-control me-2" 

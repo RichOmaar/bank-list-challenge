@@ -3,22 +3,22 @@
   --white: #fafafa;
   --primary: #178582;
 
-  /* .main__container { */
-    margin-top: 80px;
-  /* } */
+  margin-top: 80px;
 }
 
 body {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 a {
   color: var(--primary);
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: var(--primary);
+  color: var(--primary)!important;
+  transition: all 0.3s ease;
 }
 
 a,
@@ -30,6 +30,10 @@ h4,
 h5,
 h6 {
   letter-spacing: 1.1px;
+}
+
+.container .row .col {
+  z-index: -1!important;
 }
 
 @media (max-width: 575.98px) {

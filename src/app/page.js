@@ -9,7 +9,7 @@ async function getBanks() {
   }
   
   const data = response.props.data
-
+  
   return data;
 }
 export default async function Home() {
@@ -17,7 +17,7 @@ export default async function Home() {
   const banks = await getBanks().catch(err => console.log(err));
 
   return (
-    <main className="main__container">
+    <main className="main__container container">
       <HomePage banks={banks}/>
     </main>
   );
