@@ -34,7 +34,7 @@ export default function BusquedaPage({ termino }) {
         <p>Regresar</p>
       </Link>
       <div className="d-flex align-items-center justify-content-center home__title mt-3">
-        <h1>Busqueda: {termino}</h1>
+        <h1>Búsqueda: {termino}</h1>
         <span className="home__title-background">{termino}</span>
       </div>
       {banksFiltered.length > 0 ? (
