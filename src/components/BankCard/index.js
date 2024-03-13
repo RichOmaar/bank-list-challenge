@@ -2,11 +2,9 @@
 
 import Image from "next/image";
 import "./BankCard.css";
+import useStoreData from "@/hooks/storeData";
 
-export default function BankCard({ bank }) {
-  function handleURL(text) {
-    return text.toLowerCase().replace(/\s+/g, "-");
-  }
+export default function BankCard({ bank, deleteBtn, handleDeleteBank }) {
 
   return (
     <>
@@ -26,7 +24,9 @@ export default function BankCard({ bank }) {
             <small>
               <b>{bank.age}</b> años en el mercado
             </small>
-            <span className="btn btn-danger">Elminar</span>
+            {deleteBtn && 
+              <span className="btn btn-danger" onClick={() => handleDeleteBank(bank.bankName)}>Elminar</span>
+            }
           </div>
         </div>
       </div>

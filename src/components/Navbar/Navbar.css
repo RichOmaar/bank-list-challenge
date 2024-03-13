@@ -1,7 +1,6 @@
 .navbar__container {
-    background-color: var(--black)!important;
-    /* color: var(--white)!important; */
-
+    background-color: var(--secondary)!important;
+    z-index: 10;
     position: fixed;
     top: 0;
     width: 100%;
@@ -18,7 +17,8 @@
 }
 
 .navbar-brand {
-    color: var(--white);
+    color: var(--black);
+    font-size: 25px;
 }
 
 @media (max-width: 575.98px) {

@@ -1,5 +1,6 @@
 :root {
   --black: #0a0a0a;
+  --secondary: #e0e0e0;
   --white: #fafafa;
   --primary: #178582;
 
@@ -32,8 +33,45 @@ h6 {
   letter-spacing: 1.1px;
 }
 
-.container .row .col {
-  z-index: -1!important;
+.sort__icon {
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+
+  transition: all 0.3s ease;
+}
+
+.sort__icon.active {
+  color: var(--primary);
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+.sort__icon:hover {
+  color: var(--primary);
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+.home__title {
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+
+.home__title-background {
+  -webkit-text-stroke-width: 2px;
+  color: var(--primary);
+  display: inline-block;
+  font-size: 100px;
+  font-weight: 700;
+  opacity: .06;
+  position: absolute;
+  z-index: 0;
 }
 
 @media (max-width: 575.98px) {

@@ -10,7 +10,9 @@ export default function Navbar () {
     const [searchValue, setSearchValue] = useState('');
     function handleSearch (e) {
         e.preventDefault();
+        if (!searchValue) return;
         Router.push(`/busqueda/${searchValue}`);
+        setSearchValue('');
     }
 
     const handleChange = (e) => {
@@ -20,7 +22,7 @@ export default function Navbar () {
     return (
         <nav className="navbar navbar__container bg-body-tertiary">
             <div className="container-fluid">
-                <Link href="/" className="navbar-brand">Lista de bancos</Link>
+                <Link href="/" className="navbar-brand">Bancos</Link>
                 <form className="d-flex" role="search" onSubmit={handleSearch}>
                     <input 
                         className="form-control me-2" 
